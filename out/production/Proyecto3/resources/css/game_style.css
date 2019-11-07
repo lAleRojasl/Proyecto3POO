@@ -1,0 +1,97 @@
+.button {
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 1.5em;
+}
+
+.button:pressed {
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+.button Text {
+    -fx-fill: white;
+	-fx-font: 16px "Serif";
+    -fx-effect: dropshadow( gaussian , #a30000 , 0,0,0,2 );
+}
+
+#healButton {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #147F2D 0%, #12904C 100%),
+        #2BA959,
+        #3BDA7B,
+        radial-gradient(center 50% 50%, radius 100%, #3BDA7B, #29B344);
+}
+#healButton:hover {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #147F2D 0%, #12904C 100%),
+        #2BA959,
+        #3BDA7B,
+        radial-gradient(center 50% 50%, radius 100%, #85F2B0, #29B344);
+}
+
+#cleanButton {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #147F2D 0%, #12904C 100%),
+        #2BA959,
+        #3BDA7B,
+        radial-gradient(center 50% 50%, radius 100%, #3BDA7B, #29B344);
+}
+#cleanButton:hover {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #147F2D 0%, #12904C 100%),
+        #2BA959,
+        #3BDA7B,
+        radial-gradient(center 50% 50%, radius 100%, #85F2B0, #29B344);
+}
+
+#petButton {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #147F2D 0%, #12904C 100%),
+        #2BA959,
+        #3BDA7B,
+        radial-gradient(center 50% 50%, radius 100%, #3BDA7B, #29B344);
+}
+
+#petButton:hover {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #147F2D 0%, #12904C 100%),
+        #2BA959,
+        #3BDA7B,
+        radial-gradient(center 50% 50%, radius 100%, #85F2B0, #29B344);
+}
+
+#petButton {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #147F2D 0%, #12904C 100%),
+        #2BA959,
+        #3BDA7B,
+        radial-gradient(center 50% 50%, radius 100%, #3BDA7B, #29B344);
+}
+
+#petButton:hover {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #147F2D 0%, #12904C 100%),
+        #2BA959,
+        #3BDA7B,
+        radial-gradient(center 50% 50%, radius 100%, #85F2B0, #29B344);
+}
+
+#feedButton {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #147F2D 0%, #12904C 100%),
+        #2BA959,
+        #3BDA7B,
+        radial-gradient(center 50% 50%, radius 100%, #3BDA7B, #29B344);
+}
+
+#feedButton:hover {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #147F2D 0%, #12904C 100%),
+        #2BA959,
+        #3BDA7B,
+        radial-gradient(center 50% 50%, radius 100%, #85F2B0, #29B344);
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="762.0" prefWidth="1375.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="misingo.GameController">
+  <children>
+    <ImageView fx:id="roombg" layoutX="0.0" layoutY="0.0">
+      <image>
+        <Image url="@../resources/room_bg.jpg" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <Pane layoutX="0.0" layoutY="0.0" prefHeight="770.0" prefWidth="258.0">
+      <children>
+        <Button id="feedButton" fx:id="healButton" alignment="CENTER" defaultButton="false" layoutX="14.0" layoutY="691.0" mnemonicParsing="false" onAction="#handleFeedButtonAction" prefHeight="41.0" prefWidth="230.0" style="" styleClass="feedButton" text="Feed" textAlignment="CENTER" textOverrun="ELLIPSIS" wrapText="false">
+          <font>
+            <Font name="Bell MT" size="24.0" fx:id="x1" />
+          </font>
+          <stylesheets>
+            <URL value="@../resources/css/game_style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="petButton" defaultButton="false" font="$x1" layoutX="14.0" layoutY="623.0" mnemonicParsing="false" onAction="#handlePetButtonAction" prefHeight="41.0" prefWidth="230.0" style="" styleClass="healButton" text="Pet" textAlignment="CENTER" wrapText="false">
+          <stylesheets>
+            <URL value="@../resources/css/game_style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="cleanButton" defaultButton="false" font="$x1" layoutX="14.0" layoutY="552.0" mnemonicParsing="false" onAction="#handleCleanButtonAction" prefHeight="41.0" prefWidth="230.0" style="" styleClass="cleanButton" text="Clean" textAlignment="CENTER" wrapText="false">
+          <stylesheets>
+            <URL value="@../resources/css/game_style.css" />
+          </stylesheets>
+        </Button>
+        <Button id="healButton" defaultButton="false" font="$x1" layoutX="14.0" layoutY="481.0" mnemonicParsing="false" onAction="#handleHealButtonAction" prefHeight="41.0" prefWidth="230.0" style="" styleClass="healButton" text="Heal" textAlignment="CENTER" wrapText="false">
+          <stylesheets>
+            <URL value="@../resources/css/game_style.css" />
+          </stylesheets>
+        </Button>
+      </children>
+    </Pane>
+    <Text fx:id="actiontarget" layoutX="673.0" layoutY="75.0" scaleX="3.0562248372858867" scaleY="3.1302006790263013" text="SOME TEXT" />
+  </children>
+</AnchorPane>
