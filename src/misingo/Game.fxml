@@ -110,5 +110,10 @@
         <Label font="$x4" layoutX="35.0" layoutY="300.0" prefWidth="56.999908447265625" text="Dia" textAlignment="CENTER" wrapText="false" />
       </children>
     </Pane>
+    <ImageView id="Walk (1).png" fx:id="petView" fitHeight="245.0500946044922" fitWidth="262.0" layoutX="757.0" layoutY="317.0">
+      <image>
+        <Image url="@../resources/cats/Walk1.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
   </children>
 </AnchorPane>
