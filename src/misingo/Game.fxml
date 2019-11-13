@@ -20,7 +20,12 @@
     </ImageView>
     <Pane layoutX="0.0" layoutY="0.0" prefHeight="770.0" prefWidth="258.0">
       <children>
-        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffffe8" height="769.9999000000025" layoutX="-1.0" layoutY="0.0" stroke="WHITE" strokeType="INSIDE" width="258.0000915527344" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" height="101.0" layoutX="-1.0" layoutY="0.0" stroke="WHITE" strokeType="INSIDE" width="258.0000915527344">
+          <fill>
+            <Color blue="0.250" green="0.250" red="0.250" fx:id="x6" />
+          </fill>
+        </Rectangle>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffffe8" height="769.999755859375" layoutX="-1.0" layoutY="0.0" stroke="WHITE" strokeType="INSIDE" width="258.0001220703125" />
         <Button id="feedButton" fx:id="healButton" alignment="CENTER" defaultButton="false" layoutX="14.0" layoutY="702.0" mnemonicParsing="false" onAction="#handleFeedButtonAction" prefHeight="41.0" prefWidth="230.0" style="" styleClass="feedButton" text="Feed" textAlignment="CENTER" textOverrun="ELLIPSIS" wrapText="false">
           <font>
             <Font name="Bell MT" size="24.0" fx:id="x1" />
@@ -44,35 +49,25 @@
             <URL value="@../resources/css/game_style.css" />
           </stylesheets>
         </Button>
-        <ComboBox id="" fx:id="petSelector" layoutX="13.0" layoutY="66.0" onAction="#petSelectionChanged" prefHeight="36.62677001953125" prefWidth="230.0" promptText="Seleccionar Mascota">
-          <items>
-            <FXCollections fx:factory="observableArrayList">
-              <String fx:value="Misingo" />
-            </FXCollections>
-          </items>
-          <stylesheets>
-            <URL value="@../resources/css/game_style.css" />
-          </stylesheets>
-        </ComboBox>
-        <Label layoutX="47.0" layoutY="131.0" prefWidth="56.999900000002526" text="Salud">
+        <Label layoutX="40.0" layoutY="131.0" prefWidth="56.999900000002526" text="Health">
           <font>
             <Font size="18.0" fx:id="x2" />
           </font>
         </Label>
-        <Label layoutX="56.0" layoutY="17.0" prefWidth="161.0" text="Mis Mascotas" textAlignment="CENTER" wrapText="false">
+        <Label layoutX="49.0" layoutY="18.0" prefWidth="161.0" text="MISINGO" textAlignment="CENTER" textFill="#202020" textOverrun="ELLIPSIS" wrapText="false">
           <font>
-            <Font name="Ink Free" size="25.0" fx:id="x4" />
+            <Font name="Hand Me Down S -BRK-" size="40.0" />
           </font>
         </Label>
-        <Label font="$x2" layoutX="19.0" layoutY="166.0" prefWidth="79.99990844726562" text="Suciedad" />
-        <Label font="$x2" layoutX="21.0" layoutY="200.0" prefWidth="71.0" text="Felicidad" />
-        <Label font="$x2" layoutX="28.0" layoutY="237.0" prefWidth="70.9999831054738" text="Hambre" />
+        <Label font="$x2" layoutX="57.0" layoutY="166.0" prefWidth="36.0000084472631" text="Filth" />
+        <Label font="$x2" layoutX="9.0" layoutY="199.0" prefWidth="83.99990844726562" text="Happiness" />
+        <Label font="$x2" layoutX="33.0" layoutY="236.0" prefWidth="63.99989155273943" text="Hunger" />
         <ProgressBar id="" fx:id="healthBar" layoutX="98.0" layoutY="134.0" prefHeight="17.5218505859375" prefWidth="145.0" progress="1.0" styleClass="health-bar">
           <stylesheets>
             <URL value="@../resources/css/game_style.css" />
           </stylesheets>
         </ProgressBar>
-        <ProgressBar id="" fx:id="dirtBar" layoutX="98.0" layoutY="169.0" prefHeight="17.5218505859375" prefWidth="145.0" progress="0.0" styleClass="dirt-bar">
+        <ProgressBar id="" fx:id="filthBar" layoutX="98.0" layoutY="169.0" prefHeight="17.5218505859375" prefWidth="145.0" progress="0.0" styleClass="dirt-bar">
           <stylesheets>
             <URL value="file:/E:/TEC/POO/Git/Proyecto3POO/src/resources/css/game_style.css" />
           </stylesheets>
@@ -100,19 +95,38 @@
         <Separator layoutX="146.0" layoutY="134.0" orientation="VERTICAL" prefHeight="123.5218505859375" prefWidth="19.999900000002526" />
         <Separator layoutX="175.0" layoutY="134.0" orientation="VERTICAL" prefHeight="123.5218421386744" prefWidth="19.999900000002526" />
         <Separator layoutX="204.0" layoutY="134.0" orientation="VERTICAL" prefHeight="123.5218421386744" prefWidth="19.999900000002526" />
-        <Label id="clock" fx:id="dayLabel" layoutX="105.0" layoutY="294.0" prefHeight="39.9609375" prefWidth="138.00002207031503" text="Lunes" textAlignment="CENTER">
+        <Label id="clock" fx:id="dayLabel" layoutX="104.0" layoutY="297.0" prefHeight="39.9609375" prefWidth="138.00002207031503" text="Monday" textAlignment="CENTER">
           <font>
             <Font name="Ink Free" size="30.0" fx:id="x5" />
           </font>
         </Label>
-        <Label font="$x4" layoutX="35.0" layoutY="357.0" prefWidth="56.999908447265625" text="Hora" textAlignment="CENTER" wrapText="false" />
-        <Label id="clock" fx:id="clockLabel" font="$x5" layoutX="105.0" layoutY="352.0" prefHeight="39.9609375" prefWidth="125.9998779296875" text="00:00" textAlignment="CENTER" />
-        <Label font="$x4" layoutX="35.0" layoutY="300.0" prefWidth="56.999908447265625" text="Dia" textAlignment="CENTER" wrapText="false" />
+        <Label layoutX="42.0" layoutY="359.0" prefWidth="56.999908447265625" text="Hour" textAlignment="CENTER" wrapText="false">
+          <font>
+            <Font name="Ink Free" size="25.0" fx:id="x4" />
+          </font>
+        </Label>
+        <Label id="clock" fx:id="clockLabel" font="$x5" layoutX="106.0" layoutY="354.0" prefHeight="39.9609375" prefWidth="125.9998779296875" text="00:00" textAlignment="CENTER" />
+        <Label font="$x4" layoutX="49.0" layoutY="299.0" prefWidth="46.0" text="Day" textAlignment="CENTER" textFill="BLACK" wrapText="false" />
+        <Label layoutX="54.0" layoutY="61.0" prefWidth="145.0" text="A simple pet game" textAlignment="CENTER" textFill="$x6" textOverrun="ELLIPSIS" wrapText="false">
+          <font>
+            <Font name="Hand Me Down S -BRK-" size="20.0" />
+          </font>
+        </Label>
       </children>
     </Pane>
-    <ImageView id="Walk (1).png" fx:id="petView" fitHeight="245.0500946044922" fitWidth="262.0" layoutX="757.0" layoutY="317.0">
+    <ImageView id="pet1" fx:id="pet1View" fitHeight="245.0500946044922" fitWidth="262.0" layoutX="688.0" layoutY="314.0" onMouseClicked="#petSelectionChanged" visible="true">
       <image>
-        <Image url="@../resources/cats/Walk1.png" preserveRatio="true" smooth="true" />
+        <Image url="@../resources/cats/v1/Idle1.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="pet2" fx:id="pet2View" fitHeight="245.05019460448966" fitWidth="262.0" layoutX="282.0" layoutY="498.0" onMouseClicked="#petSelectionChanged" visible="true">
+      <image>
+        <Image url="@../resources/cats/v2/Idle1.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView id="pet3" fx:id="pet3View" fitHeight="245.05019460448966" fitWidth="262.0" layoutX="917.0" layoutY="510.0" onMouseClicked="#petSelectionChanged" visible="true">
+      <image>
+        <Image url="@../resources/cats/v3/Idle1.png" preserveRatio="true" smooth="true" />
       </image>
     </ImageView>
   </children>

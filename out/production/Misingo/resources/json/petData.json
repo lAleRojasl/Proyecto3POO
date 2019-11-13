@@ -1,0 +1,27 @@
+{
+  "player": "Jose",
+  "pet" : [
+	{
+		"name" : "Misingo",
+		"feeding" : [8,18],
+		"cleaning" : [19],
+		"petting" : [9,11,15,19],
+		"healing" : []
+	},
+  	{
+		"name" : "Garfield",
+		"feeding" : [6,19],
+		"cleaning" : [9,16],
+		"petting" : [6,8,12,15,18],
+		"healing" : [13]
+	},
+	{
+		"name" : "Bigotes",
+		"feeding" : [14],
+		"cleaning" : [6],
+		"petting" : [17],
+		"healing" : [7,12,18]
+	}
+  ]
+  
+}
