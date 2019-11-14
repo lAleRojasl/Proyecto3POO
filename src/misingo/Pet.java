@@ -22,17 +22,47 @@ public class Pet {
     private boolean isPetted = true;
     private boolean isHealthy = true;
 
-    //---Feeding---
-    public boolean isFeedingTime(Integer hour){
+    //---METHODS---
+    public boolean updatePetNeeds(Integer hour){
+        boolean hasNeeds = false;
         //It's either feeding time or a subsequent time
         if(feedingTimes.contains(hour) || !isFed) {
+            hasNeeds = true;
             this.isFed = false;
             this.hunger++;
             this.happiness--;
             this.health--;
-            return true;
         }
-        else return false;
+        if(cleaningTimes.contains(hour) || !isClean){
+            hasNeeds = true;
+            this.isClean = false;
+            this.filth++;
+            this.health--;
+        }
+        if(pettingTimes.contains(hour) || !isPetted){
+            hasNeeds = true;
+            this.isPetted = false;
+            this.happiness--;
+        }
+        if(healingTimes.contains(hour) || !isHealthy){
+            hasNeeds = true;
+            isHealthy = false;
+            this.health--;
+        }
+        normalizeStats();
+        return hasNeeds;
+    }
+
+    public void normalizeStats(){
+        if(this.hunger > 5) this.hunger = 5;
+        if(this.filth > 5) this.filth = 5;
+        if(this.happiness > 5) this.happiness = 5;
+        if(this.hunger > 5) this.hunger = 5;
+
+        if(this.hunger < 0) this.hunger = 0;
+        if(this.filth < 0) this.filth = 0;
+        if(this.happiness < 0) this.happiness = 0;
+        if(this.health < 0) this.health = 0;
     }
 
     public void feedPet(){
@@ -40,53 +70,35 @@ public class Pet {
         this.hunger--;
         this.happiness++;
         this.health++;
-    }
-
-    //---Cleaning---
-    public boolean isCleaningTime(Integer hour){
-        if(cleaningTimes.contains(hour) || !isClean){
-            this.isClean = false;
-            this.filth++;
-            this.health--;
-            return true;
-        }
-        else return false;
+        normalizeStats();
     }
 
     public void cleanPet(){
         this.isClean = true;
         this.filth--;
         this.health++;
-    }
-
-    public boolean isPettingTime(Integer hour){
-        if(pettingTimes.contains(hour) || !isPetted){
-            this.happiness--;
-            return true;
-        }
-        else return false;
+        normalizeStats();
     }
 
     public void petPet(){
         this.isPetted = true;
         this.happiness += 2; //extra happiness!
-        if(this.happiness > 5) this.happiness = 5;
-    }
-
-    public boolean isHealingTime(Integer hour){
-        if(healingTimes.contains(hour) || !isHealthy){
-            isHealthy = false;
-            this.health--;
-            return true;
-        }
-        else return false;
+        normalizeStats();
     }
 
     public void healPet(){
         this.isHealthy = true;
         this.health += 2; //extra healthy!
-        if(this.health > 5) this.health = 5;
+        normalizeStats();
     }
+
+    public Double getPetHealth(){ return health * 0.2d; }
+
+    public Double getPetFilth(){  return filth * 0.2d;  }
+
+    public Double getPetJHappiness(){  return happiness * 0.2d;  }
+
+    public Double getPetHunger(){  return hunger * 0.2d;  }
 
     public String getName(){
         return this.name;

@@ -11,7 +11,7 @@
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="762.0" prefWidth="1375.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="misingo.GameController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="762.0" prefWidth="1375.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="misingo.GameInitializer">
   <children>
     <ImageView fx:id="roombg" layoutX="0.0" layoutY="0.0">
       <image>
@@ -69,17 +69,17 @@
         </ProgressBar>
         <ProgressBar id="" fx:id="filthBar" layoutX="98.0" layoutY="169.0" prefHeight="17.5218505859375" prefWidth="145.0" progress="0.0" styleClass="dirt-bar">
           <stylesheets>
-            <URL value="file:/E:/TEC/POO/Git/Proyecto3POO/src/resources/css/game_style.css" />
+            <URL value="@../resources/css/game_style.css" />
           </stylesheets>
         </ProgressBar>
         <ProgressBar id="" fx:id="happinessBar" layoutX="98.0" layoutY="203.0" prefHeight="17.5218505859375" prefWidth="145.0" progress="1.0" styleClass="happiness-bar">
           <stylesheets>
-            <URL value="file:/E:/TEC/POO/Git/Proyecto3POO/src/resources/css/game_style.css" />
+            <URL value="@../resources/css/game_style.css" />
           </stylesheets>
         </ProgressBar>
         <ProgressBar id="" fx:id="hungerBar" layoutX="98.0" layoutY="240.0" prefHeight="17.5218505859375" prefWidth="145.0" progress="0.0" styleClass="hunger-bar">
           <stylesheets>
-            <URL value="file:/E:/TEC/POO/Git/Proyecto3POO/src/resources/css/game_style.css" />
+            <URL value="@../resources/css/game_style.css" />
           </stylesheets>
         </ProgressBar>
         <Label layoutX="109.0" layoutY="111.0" prefWidth="19.999900000002526" text="1">
@@ -127,6 +127,21 @@
     <ImageView id="pet3" fx:id="pet3View" fitHeight="245.05019460448966" fitWidth="262.0" layoutX="917.0" layoutY="510.0" onMouseClicked="#petSelectionChanged" visible="true">
       <image>
         <Image url="@../resources/cats/v3/Idle1.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView fx:id="pet1Mark" fitHeight="74.99998474121094" fitWidth="83.99988555908203" layoutX="768.0" layoutY="277.0" visible="false">
+      <image>
+        <Image url="@../resources/hey.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView fx:id="pet2Mark" fitHeight="74.99998474121094" fitWidth="83.99988555908203" layoutX="365.0" layoutY="459.0" visible="false">
+      <image>
+        <Image url="@../resources/hey.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <ImageView fx:id="pet3Mark" fitHeight="74.99998474121094" fitWidth="83.99988555908203" layoutX="997.0" layoutY="473.0" visible="false">
+      <image>
+        <Image url="@../resources/hey.png" preserveRatio="true" smooth="true" />
       </image>
     </ImageView>
   </children>
