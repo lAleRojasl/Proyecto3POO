@@ -84,12 +84,6 @@ public class PetLoader {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-        //TODO: for each Pet on JSON file:
-        //      Create a Pet Object
-
-
-
     }
 
 }

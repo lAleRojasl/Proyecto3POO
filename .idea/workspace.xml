@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/com_googlecode_json_simple_json_simple_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Misingo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Misingo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Misingo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Misingo/misingo/Game.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Misingo/misingo/Game.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Misingo/misingo/GameController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Misingo/misingo/Pet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Misingo/misingo/Pet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Misingo/misingo/PetLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Misingo/misingo/PetLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Misingo/misingo/PetThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Misingo/misingo/PetThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/misingo/Game.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/misingo/Game.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/misingo/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/misingo/GameInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/misingo/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/misingo/Pet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/misingo/PetLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/misingo/PetLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/misingo/PetThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/misingo/PetThread.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
